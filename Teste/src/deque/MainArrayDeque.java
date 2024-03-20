@@ -1,3 +1,5 @@
+package deque;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -41,6 +43,12 @@ public class MainArrayDeque {
         String exemplo2 = lista2.removeLast();
         System.out.println("Removido --> " + exemplo2);
         System.out.println(lista2);
+
+        /*  Pra remover qualquer item, ignorando a ordem da fila, basta:   */
+        System.out.println("\nRemoção de qualquer elemento: ");
+        lista2.remove("Jumento");
+        System.out.println(lista2);
+
 
 
 

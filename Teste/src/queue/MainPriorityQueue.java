@@ -1,3 +1,7 @@
+package queue;
+
+import classeObjeto.Aluno;
+
 import java.util.PriorityQueue;
 import java.util.Queue;
 

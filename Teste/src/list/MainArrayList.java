@@ -1,3 +1,8 @@
+package list;
+
+import classeObjeto.Aluno;
+import classeObjeto.ComparadorNotas;
+
 import java.util.*;
 
 public class MainArrayList {
@@ -8,9 +13,9 @@ public class MainArrayList {
     }
     private static void exemploClasseAluno() {
         System.out.println("--------------------------");
-        System.out.println("Classe Aluno");
+        System.out.println("Classe classeObjeto.Aluno");
 
-        //primeiro eu instancio o objeto com as características da classe Aluno
+        //primeiro eu instancio o objeto com as características da classe classeObjeto.Aluno
         List<Aluno> aluno = new ArrayList<>();
 
         //depois crio um objeto representando um aluno, informo os atributos e adiciono a lista
@@ -22,8 +27,8 @@ public class MainArrayList {
         /*Pra usar o collections com objetos é necesário implementar na classe
         * responsável pelo objeto o "Comparable" e seu método
         * dentro da classe.
-        * Aqui, por exemplo, o Comparable foi implementado na classe Aluno
-        * E seu método "CompareTo" também, dentro da classe Aluno*/
+        * Aqui, por exemplo, o Comparable foi implementado na classe classeObjeto.Aluno
+        * E seu método "CompareTo" também, dentro da classe classeObjeto.Aluno*/
 
         aluno.add(a);
         aluno.add(b);

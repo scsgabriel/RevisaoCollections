@@ -1,3 +1,5 @@
+package classeObjeto;
+
 import java.util.Comparator;
 
 public class ComparadorNotas implements Comparator<Aluno> {
