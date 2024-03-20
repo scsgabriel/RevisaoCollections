@@ -83,5 +83,7 @@ public class MainArrayList {
         boolean verificar2 = nomes.contains("Joaquim");
         System.out.println(verificar2);
 
+        //forma de consultar sem precisar criar um tipo booleano
+        System.out.println(nomes.contains("Xico"));
     }
 }
