@@ -33,7 +33,7 @@ public class MainArrayBidimensional {
             for (int coluna = 0; coluna < array2.length; coluna++){
                 System.out.printf("%d ", array2[linha][coluna]);
             }
-            System.out.println();
+            System.out.println("");
         }
     }
 
