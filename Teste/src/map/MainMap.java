@@ -16,15 +16,33 @@ public class MainMap {
         lista.put(3, "Matemática Financeira");
         lista.put(1, "Direito Administrativo");
         lista.put(2, "Legislação");
+
         System.out.println("\nValores com entrySet: ");
-
+        //Set é uma interface genérica
+        System.out.println("Iteração com forEach stream: ");
         Set<Map.Entry<Integer, String>> listaEntry = lista.entrySet(); //entrySet é como se fosse uma implementação, mas não é, ele é um método.
-        for (Map.Entry<Integer, String> iterar : listaEntry ){
-            System.out.println(iterar.getKey()); //geyKey é propriedade do entrySet
-            System.out.println(iterar.getValue()); //getValue é propriedade do entrySet
+        for (Map.Entry<Integer, String> iterar : listaEntry ){ //o tipo Map.Entry pede os parâmetros
+            System.out.println(iterar.getKey()); //geyKey é propriedade do Map.Entry / entrySet
+            System.out.println(iterar.getValue()); //getValue é propriedade do Map.Entry / entrySet
         }
-    }
 
+        System.out.println("\nIteração com Iterator e While: ");
+        Iterator<Map.Entry<Integer, String>> iterator = lista.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<Integer, String> variavel = iterator.next();
+            System.out.println("Chave: " + variavel.getKey());
+            System.out.println("Valor: " + variavel.getValue());
+        }
+
+        //forEach --> itera sobre elementos em coleções (listas, conjuntos, mapas, arrays)
+        //pois forEach é um laço restrito ao uso dentro da interface Iterable e suas subordinadas
+        //"elementoDaLista" representa a própria lista
+        System.out.println("\nIterando com forEach: ");
+        lista.entrySet().forEach( elementoDaLista ->{
+            System.out.println(elementoDaLista.getKey());
+            System.out.print(elementoDaLista.getValue());
+        });
+    }
     private static void exemploMap() {
         Map<Integer, String> lista = new HashMap<>(); //a ordenação dos dados pode acontecer, mas não é garantida
         lista.put(3, "Gabriel");
