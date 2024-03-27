@@ -47,13 +47,21 @@ public class Aluno implements Comparable <Aluno> {
         this.nota = nota;
     }
 
+    public String getSala() {
+        return sala;
+    }
+
+    public void setSala(String sala) {
+        this.sala = sala;
+    }
+
     //ToString
     @Override
     public String toString() {
         return "classeObjeto.Aluno{" +
                 "nome='" + nome + '\'' +
                 ", curso='" + curso + '\'' +
-                ", nota=" + nota +
+                ", nota=" + nota + '\'' + sala +
                 '}';
     }
 
