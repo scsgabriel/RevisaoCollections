@@ -2,7 +2,8 @@ package map;
 
 import java.util.*;
 
-public class MainMap {
+//O mesmo vale pra TreeMap e LinkedHashMap, só muda a implementação
+public class MainHashMap {
     /*  Pra ordenação com objetos é necessário implementação do equals e hashCode  */
     public static void main(String[] args){
         exemploMap();
