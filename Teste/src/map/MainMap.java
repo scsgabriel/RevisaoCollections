@@ -8,7 +8,6 @@ public class MainMap {
         exemploMap();
         iterandoComEntrySet();
     }
-
     private static void iterandoComEntrySet() {
         //Impressão com o entreySet --> pega os 2, key e values e adiciona em um variável
         //entrySet é uma forma de pegar chave e valor separadamente
@@ -19,7 +18,7 @@ public class MainMap {
 
         System.out.println("\nValores com entrySet: ");
         //Set é uma interface genérica
-        System.out.println("Iteração com forEach stream: ");
+        System.out.println("Iteração com forEach stream: "); //existem mais 3 formas usando stream de iterar com forEach (avançado)
         Set<Map.Entry<Integer, String>> listaEntry = lista.entrySet(); //entrySet é como se fosse uma implementação, mas não é, ele é um método.
         for (Map.Entry<Integer, String> iterar : listaEntry ){ //o tipo Map.Entry pede os parâmetros
             System.out.println(iterar.getKey()); //geyKey é propriedade do Map.Entry / entrySet

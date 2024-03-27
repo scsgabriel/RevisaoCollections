@@ -7,12 +7,19 @@ public class Aluno implements Comparable <Aluno> {
     private String nome;
     private String curso;
     private Double nota;
+    private  String sala;
 
-    //Construtores
+    //Construtor - Aluno
     public Aluno(String nome, String curso, Double nota) {
         this.nome = nome;
         this.curso = curso;
         this.nota = nota;
+    }
+
+    //Construtor
+    public Aluno(String nome, String curso, Double nota, String sala) {
+        this(nome, curso, nota);  //essa é a forma de utilizar o construtor acima pra não criar outro igual só pra acrescentar a "sala"
+        this.sala = sala;
     }
 
     //Getters and Setters
